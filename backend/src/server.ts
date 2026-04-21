@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(
   cors({
     origin:
-      'http://localhost:5173' /* Inserire l'URL del client che effettua le chiamate api (predefinito il server di Vite) */,
+      '*' /* Inserire l'URL del client che effettua le chiamate api */,
     credentials: true
   })
 );
